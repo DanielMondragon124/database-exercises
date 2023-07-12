@@ -1,5 +1,7 @@
 USE codeup_test_db;
 
+    TRUNCATE albums;
+
 -- Insert statements for albums with over 30 million sales
 INSERT INTO albums (artist, name, release_date, sales, genre) VALUES
     ('Michael Jackson', 'Thriller', 1982, 47.3, 'Pop, Rock, R&B'),
@@ -14,7 +16,7 @@ INSERT INTO albums (artist, name, release_date, sales, genre) VALUES
     ('Alanis Morissette', 'Jagged Little Pill', 1995, 24.4, 'Alternative rock'),
     ('Shania Twain', 'Come On Over', 1997, 29.6, 'Country, Pop'),
     ('Celine Dion', 'Falling into You', 1996, 20.2, 'Pop, Soft rock'),
-    ('The Beatles', 'Sgt. Pepper\''s Lonely Hearts Club Band', 1967, 13.1, 'Rock'),
+    ('The Beatles', 'Sgt. Pepper''s Lonely Hearts Club Band', 1967, 13.1, 'Rock'),
     ('The Eagles', 'Hotel California', 1976, 21.5, 'Rock, Soft rock, Folk rock'),
     ('Bill Medley', 'Dirty Dancing', 1987, 17.9, 'Pop, Rock, R&B'),
     ('Adele', '21', 2011, 25.3, 'Pop, Soul'),
@@ -29,4 +31,4 @@ INSERT INTO albums (artist, name, release_date, sales, genre) VALUES
     ('Nirvana', 'Nevermind', 1991, 16.7, 'Grunge, Alternative rock'),
     ('Pink Floyd', 'The Wall', 1979, 17.6, 'Progressive rock'),
     ('Santana', 'Supernatural', 1999, 20.5, 'Rock'),
-    ('Guns N\'' Roses', 'Appetite for Destruction', 1987, 21.6, 'Hard rock');
+    ('Guns N'' Roses', 'Appetite for Destruction', 1987, 21.6, 'Hard rock');
