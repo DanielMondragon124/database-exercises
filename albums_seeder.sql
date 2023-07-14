@@ -1,5 +1,4 @@
 USE codeup_test_db;
-
     TRUNCATE albums;
 
 -- Insert statements for albums with over 30 million sales
