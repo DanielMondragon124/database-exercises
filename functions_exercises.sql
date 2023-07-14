@@ -30,7 +30,12 @@ WHERE month(birth_date) = 12 AND dayofmonth(birth_date) = 25;
 
 SELECT *
 FROM employees
-WHERE year (hire_date) BETWEEN 1990 AND 1999 AND month(birth_date) = 12 AND dayofmonth(birth_date) = 25;
+WHERE year (hire_date) BETWEEN 1990 AND 1999 AND month(birth_date) = 12 AND dayofmonth(birth_date) = 25
+ORDER BY hire_date DESC, birth_date ASC LIMIT 1;
 
+SELECT *, datediff(curdate(), hire_date) AS days_worked
+FROM employees
+WHERE year(hire_date) BETWEEN 1990 AND 1999 AND month(birth_date) = 12 AND dayofmonth(birth_date) = 25
+ORDER BY days_worked DESC;
 
 
