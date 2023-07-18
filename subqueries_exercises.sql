@@ -27,6 +27,13 @@ WHERE emp_no IN (
     FROM employees
     WHERE first_name = 'Aamod'
     );
+SELECT DISTINCT title
+FROM titles
+WHERE emp_no IN (
+    SELECT emp_no
+    FROM employees
+    WHERE first_name = 'Aamod'
+);
 # 314 total titles, 6 unique titles
 # Find all the current department managers that are female.
 SELECT first_name, last_name
